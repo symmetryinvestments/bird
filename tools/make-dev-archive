@@ -7,7 +7,7 @@ BIRD_VERSION=`grep 'BIRD_VERSION \"' sysdep/config.h | sed '/BIRD_VERSION/!d;s/^
 # differentiate dev tarballs from upstream ones
 GIT_HASH=$(git rev-parse --short HEAD )
 TIMESTAMP=$(date -u +'%s' 2>/dev/null)
-VERSION=$BIRD_VERSION.$TIMESTAMP.$GIT_HASH
+VERSION=$BIRD_VERSION
 
 REL=bird-$VERSION
 T=/tmp/bird
